@@ -36,7 +36,9 @@ jobs:
 
     - name: Sphinx
       run: |
-        cd sphinx/build/source
+        python -m pip install sphinx
+        python -m pip install breathe
+        cd sphinx
         make html
     
     - name: Tests
