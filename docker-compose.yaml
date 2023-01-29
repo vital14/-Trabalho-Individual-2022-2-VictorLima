@@ -2,6 +2,14 @@
 version: '3.8'
 
 services:
+  app:
+    build: .
+    command: python src/main.py
+    volumes:
+      - .:/app
+    depends_on:
+      - mongo
+
   mongo:
     image: mongo:latest
     container_name: mongo-db
@@ -13,10 +21,3 @@ services:
       - 3000:3000
     volumes:
       - .:/app/db 
-  app:
-    build: .
-    command: python src/main.py
-    volumes:
-      - .:/app
-    depends_on:
-      - mongo
