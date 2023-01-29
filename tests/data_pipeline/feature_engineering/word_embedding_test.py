@@ -1,7 +1,7 @@
 import os
 import sys
 
-sys.path.insert(0, os.path.abspath('../../src'))
+sys.path.insert(0, os.path.abspath('../../../src'))
 import pytest
 from whatlies.language import BytePairLanguage
 import numpy as np

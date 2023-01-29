@@ -3,8 +3,7 @@ version: '3.8'
 
 services:
   app:
-    build: .
-    command: python src/main.py
+    build: ./src
     volumes:
       - .:/app
     depends_on:
