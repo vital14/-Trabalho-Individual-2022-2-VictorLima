@@ -2,7 +2,7 @@ import pytest
 import os
 import sys
 
-sys.path.insert(0, os.path.abspath('../../src'))
+sys.path.insert(0, os.path.abspath('../../../src'))
 from statistics import mean
 from data_pipeline.feature_engineering.key_smash import KeySmash
 
