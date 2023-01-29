@@ -1,0 +1,8 @@
+
+dag:
+  id: my_dag
+  data_path: /path/to/data
+  output_folder: /path/to/output
+  description: My DAG
+  feature_engineering: feature_engineering.py
+  model: my_model.py
