@@ -1,22 +1,25 @@
 
-version: '3.8'
-
+version: "3.8"
 services:
+  mongodb:
+    image: mongo
+    container_name: mongodb
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=lappis
+      - MONGO_INITDB_ROOT_PASSWORD=lappis
+    ports:
+      - "27017:27017"
+    restart: unless-stopped
+    volumes:
+      - mongodb_data:/data/db
   app:
-    build: ./src
+    build: .
+    command: python src/main.py
     volumes:
       - .:/app
     depends_on:
-      - mongo
-
-  mongo:
-    image: mongo:latest
-    container_name: mongo-db
-    restart: always
-    environment:
-      MONGO_INITDB_ROOT_USERNAME: lappis
-      MONGO_INITDB_ROOT_PASSWORD: lappis
+      - mongodb
     ports:
-      - 3000:3000
-    volumes:
-      - .:/app/db
+      - "3000:3000"
+volumes:
+  mongodb_data:
