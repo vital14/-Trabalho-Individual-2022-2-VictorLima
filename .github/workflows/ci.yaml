@@ -42,7 +42,7 @@ jobs:
 
     - name: Sphinx
       run: |
-        cd sphinx
+        cd sphinx/build/source
         make html
     
     - name: Tests
