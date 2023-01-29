@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_d8011c2d3002aeb7fe29b60ec5b6cceb" kind="dir">
+    <compoundname>/home/victor/Trabalho-Individual-2022-2-GCES/src/data_pipeline</compoundname>
+    <innerfile refid="data__pipeline_2____init_____8py">__init__.py</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/victor/Trabalho-Individual-2022-2-GCES/src/data_pipeline/"/>
+  </compounddef>
+</doxygen>
